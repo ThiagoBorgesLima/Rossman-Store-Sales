@@ -100,7 +100,9 @@ Even though Random Forest Regressor model presented a slightly better performanc
 
 After running hyperparameter fine tuning for XGBoost Regressor model, the final performance was found as showed below.
 
-<img src="https://github.com/ThiagoBorgesLima/Rossman-Store-Sales/blob/main/imgs/final_model2.png" width="330" height="50"><br>
+|    Model Name        |     MAE      |    MAPE    |     RMSE       |
+|:--------------------:|:------------:|:----------:|:--------------:|
+|  XGBoost Regressor   |   626.974   |   0.0910    |   918.043      |
 
 Error (real sales - prediction) scatter plot:
 
