@@ -141,6 +141,11 @@ Finally, the table below shows the sum for all stores, as well as the worst and 
 
 It was created a Telegram Bot in order to easily accesss predictions for individual stores by texting the store number you want the see the sales prediction. Bot can be accessed at https://t.me/rossmann_t_bot.
 
+<img src="https://github.com/ThiagoBorgesLima/Rossman-Store-Sales/blob/main/imgs/bot.png" width="600" height="375">
+
+
+
+
 ## 9. Conclusion
 
 The objective of this project was to simulate a real life business problem and address the solution using Machine Learning models. By using CRISP-DS methodoly, it was possible to build an organized structure in order to understand the business problem, analyse the data, test models and finally provide an accurate sales predictions for the stores. 
