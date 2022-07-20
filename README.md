@@ -84,25 +84,54 @@ Attribute | Definition
 
 ## 6. Models Performance
 
-The image below shows values of MAE (Mean Absolute Error), MAPE (Mean Absolute Percentage Error) and RMSE (Root-Mean_Square Deviation) for each model after performing Cross-Validation.
+For the problem solution, it was evaluated four machine learning algorithms: Linear Regression, Lasso Regression, Random Forest Regressor and XGBoost Regressor.
 
-<img src="https://github.com/ThiagoBorgesLima/Rossman-Store-Sales/blob/main/imgs/cross_model.png" width="450" height="120"><br>
+A cross-validation was made for each model, evaluating the Mean Absolute Error (MAE), the Mean Absolute Percentage Error (MAPE) and the Root Mean Squared Error (RMSE). The average cross-validation error as well their respective standard deviation are ilustrated in the table below:
+
+|       Model Name          |        MAE CV       |    MAPE CV    |      RMSE CV       |
+|:-------------------------:|:-------------------:|:-------------:|:------------------:|
+| Linear Regression         |  2081.73 +/- 296.56 | 0.30 +/- 0.02 | 2953.15 +/- 468.99 |
+| Lasso Regression          |  2115.89 +/- 341.40 | 0.29 +/- 0.01 | 3056.97 +/- 504.51 |
+| Random Forest Regressor   |  841.86 +/- 221.10  | 0.12 +/- 0.02 | 1261.16 +/- 316.28 |
+| XGBoost Regressor         |  1029.56 +/- 183.99 | 0.14 +/- 0.02 | 1485.04 +/- 262.49 |
+ 
 
 Even though Random Forest Regressor model presented a slightly better performance, it was decided to proceed with XGBoost Regressor model because of the signicant lower memory and time consuming.
 
 After running hyperparameter fine tuning for XGBoost Regressor model, the final performance was found as showed below.
 
-<img src="https://github.com/ThiagoBorgesLima/Rossman-Store-Sales/blob/main/imgs/final_model2.png" width="330" height="50"><br>
+|    Model Name        |     MAE      |    MAPE    |     RMSE       |
+|:--------------------:|:------------:|:----------:|:--------------:|
+|  XGBoost Regressor   |   626.974   |   0.0910    |   918.043      |
 
 Error (real sales - prediction) scatter plot:
 
-<img src="https://github.com/ThiagoBorgesLima/Rossman-Store-Sales/blob/main/imgs/errorxpred.png" width="600" height="275"><br>
+<img src="https://github.com/ThiagoBorgesLima/Rossman-Store-Sales/blob/main/imgs/errorxpred2.png" width="900" height="475"><br>
 
 ## 7. Business Results
 
-According to the model, in the next six weeks all stores together will sell R$ 283,901,824.00. Assuming the error found after running fine tuning, we can assume that the stores will sell R$ 283,198,749.24 in the worst case scenario and R$ 284,604,871.47 in the best case scenario.
+In terms of business, MAE means how much the prediction is wrong, defining upper and lower bounds. MAPE means the percentage that predicted values are different when compared to the target values, thus, being an easy-to-interpret metric. 
 
-<img src="https://github.com/ThiagoBorgesLima/Rossman-Store-Sales/blob/main/imgs/business2.png" width="240" height="110"><br>
+The table below shows the worst store predictions, explaining that some stores are more difficult to predict sales. The worst_scenario field is calculated by subtracting the MAE from the predictions field and the best_scenario field is calculated by adding the MAE field.
+
+|   store |   predictions |   worst_scenario |   best_scenario |      MAE |     MAPE |
+|--------:|--------------:|-----------------:|----------------:|---------:|---------:|
+|   292   |     105028    |      101730      |      108326     |  3298.2  | 0.544053 |
+|   909   |     229375    |      221574      |      237175     |  7800.4  | 0.519917 |
+|   876   |     206166    |      202181      |      210151     |  3984.9  | 0.305917 |
+|   595   |     369952    |      365648      |      374257     |  4303.3  | 0.293733 |
+|   722   |     344922    |      343148      |      346696     |  1773.7  | 0.240981 |
+
+
+
+Finally, the table below shows the sum for all stores, as well as the worst and best scenarios:
+
+| Scenario       | Values           |
+|:---------------|:-----------------|
+| predictions    | R$283,901,824.00 |
+| worst_scenario | R$283,198,749.24 |
+| best_scenario  | R$284,604,871.47 |
+
 
 ## 8. Telegram Bot
 
