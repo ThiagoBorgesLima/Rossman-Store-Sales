@@ -84,12 +84,17 @@ Attribute | Definition
 
 ## 6. Models Performance
 
-The image below shows values of MAE (Mean Absolute Error), MAPE (Mean Absolute Percentage Error) and RMSE (Root-Mean_Square Deviation) for each model after performing Cross-Validation.
+For the problem solution, it was evaluated four machine learning algorithms: Linear Regression, Lasso Regression, Random Forest Regressor and XGBoost Regressor.
 
-<p class="aligncenter">
-   <img src="https://github.com/ThiagoBorgesLima/Rossman-Store-Sales/blob/main/imgs/cross_model.png" alt="centered image" width="450" height="120" />
-</p>  
-  
+A cross-validation was made for each model, evaluating the Mean Absolute Error (MAE), the Mean Absolute Percentage Error (MAPE) and the Root Mean Squared Error (RMSE). The average cross-validation error as well their respective standard deviation are ilustrated in the table below:
+
+|       Model Name          |        MAE CV       |    MAPE CV    |      RMSE CV       |
+|:-------------------------:|:-------------------:|:-------------:|:------------------:|
+| Linear Regression         |  2081.73 +/- 296.56 | 0.30 +/- 0.02 | 2953.15 +/- 468.99 |
+| Lasso Regression          |  2115.89 +/- 341.40 | 0.29 +/- 0.01 | 3056.97 +/- 504.51 |
+| Random Forest Regressor   |  841.86 +/- 221.10  | 0.12 +/- 0.02 | 1261.16 +/- 316.28 |
+| XGBoost Regressor         |  1029.56 +/- 183.99 | 0.14 +/- 0.02 | 1485.04 +/- 262.49 |
+ 
 
 Even though Random Forest Regressor model presented a slightly better performance, it was decided to proceed with XGBoost Regressor model because of the signicant lower memory and time consuming.
 
