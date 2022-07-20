@@ -75,7 +75,7 @@ Attribute | Definition
 
 ## 5. Tools and Machine Learning Models
 
-* Python 3.8.13
+* Python 3.8
 * Boruta as feature selector
 * Linear Regression
 * Regularized Linear Regression (LASSO)
@@ -86,13 +86,13 @@ Attribute | Definition
 
 The image below shows values of MAE (Mean Absolute Error), MAPE (Mean Absolute Percentage Error) and RMSE (Root-Mean_Square Deviation) for each model after performing Cross-Validation.
 
-<img src="https://github.com/ThiagoBorgesLima/Rossman-Store-Sales/blob/main/imgs/cross_model.png" width="500" height="150"><br>
+<img src="https://github.com/ThiagoBorgesLima/Rossman-Store-Sales/blob/main/imgs/cross_model.png" width="450" height="120"><br>
 
 Even though Random Forest Regressor model presented a slightly better performance, it was decided to proceed with XGBoost Regressor model because of the signicant lower memory and time consuming.
 
 After running hyperparameter fine tuning for XGBoost Regressor model, the final performance was found as showed below.
 
-<img src="https://github.com/ThiagoBorgesLima/Rossman-Store-Sales/blob/main/imgs/final_model2.png" width="300" height="50"><br>
+<img src="https://github.com/ThiagoBorgesLima/Rossman-Store-Sales/blob/main/imgs/final_model2.png" width="330" height="50"><br>
 
 Error (real sales - prediction) scatter plot:
 
@@ -102,7 +102,7 @@ Error (real sales - prediction) scatter plot:
 
 According to the model, in the next six weeks all stores together will sell R$ 283,901,824.00. Assuming the error found after running fine tuning, we can assume that the stores will sell R$ 283,198,749.24 in the worst case scenario and R$ 284,604,871.47 in the best case scenario.
 
-<img src="https://github.com/ThiagoBorgesLima/Rossman-Store-Sales/blob/main/imgs/business.png" width="300" height="150"><br>
+<img src="https://github.com/ThiagoBorgesLima/Rossman-Store-Sales/blob/main/imgs/business2.png" width="240" height="110"><br>
 
 ## 8. Telegram Bot
 
