@@ -1,5 +1,9 @@
 
-# Rossmann - Sales - Prediction
+<img src="https://github.com/ThiagoBorgesLima/Rossman-Store-Sales/blob/main/imgs/rossmann.jpeg" width="900" height="475"><br>
+
+
+
+# Rossmann Sales Prediction
 
 This repository contains all steps based on CRISP-DS process model methodology to build a prediction sales model for a large drugstore chain. The data used in this model is available at the [Rossmann Store Sales competition page ate Kaggle.](https://www.kaggle.com/competitions/rossmann-store-sales/overview/description)
 
