@@ -86,7 +86,10 @@ Attribute | Definition
 
 The image below shows values of MAE (Mean Absolute Error), MAPE (Mean Absolute Percentage Error) and RMSE (Root-Mean_Square Deviation) for each model after performing Cross-Validation.
 
-<img src="https://github.com/ThiagoBorgesLima/Rossman-Store-Sales/blob/main/imgs/cross_model.png" width="450" height="120"><br>
+<p class="aligncenter">
+   <img src="https://github.com/ThiagoBorgesLima/Rossman-Store-Sales/blob/main/imgs/cross_model.png" alt="centered image" width="450" height="120" />
+</p>  
+  
 
 Even though Random Forest Regressor model presented a slightly better performance, it was decided to proceed with XGBoost Regressor model because of the signicant lower memory and time consuming.
 
