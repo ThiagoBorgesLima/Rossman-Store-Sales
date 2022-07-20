@@ -96,7 +96,7 @@ After running hyperparameter fine tuning for XGBoost Regressor model, the final 
 
 Error (real sales - prediction) scatter plot:
 
-<img src="https://github.com/ThiagoBorgesLima/Rossman-Store-Sales/blob/main/imgs/errorxpred.png" width="600" height="275"><br>
+<img src="https://github.com/ThiagoBorgesLima/Rossman-Store-Sales/blob/main/imgs/errorxpred2.png" width="900" height="475"><br>
 
 ## 7. Business Results
 
