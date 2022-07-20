@@ -110,9 +110,28 @@ Error (real sales - prediction) scatter plot:
 
 ## 7. Business Results
 
-According to the model, in the next six weeks all stores together will sell R$ 283,901,824.00. Assuming the error found after running fine tuning, we can assume that the stores will sell R$ 283,198,749.24 in the worst case scenario and R$ 284,604,871.47 in the best case scenario.
+In terms of business, MAE means how much the prediction is wrong, defining upper and lower bounds. MAPE means the percentage that predicted values are different when compared to the target values, thus, being an easy-to-interpret metric. 
 
-<img src="https://github.com/ThiagoBorgesLima/Rossman-Store-Sales/blob/main/imgs/business2.png" width="240" height="110"><br>
+The table below shows the worst store predictions, explaining that some stores are more difficult to predict sales. The worst_scenario field is calculated by subtracting the MAE from the predictions field and the best_scenario field is calculated by adding the MAE field.
+
+|   store |   predictions |   worst_scenario |   best_scenario |      MAE |     MAPE |
+|--------:|--------------:|-----------------:|----------------:|---------:|---------:|
+|   292   |     105028    |      101730      |      108326     |  3298.2  | 0.544053 |
+|   909   |     229375    |      221574      |      237175     |  7800.4  | 0.519917 |
+|   876   |     206166    |      202181      |      210151     |  3984.9  | 0.305917 |
+|   595   |     369952    |      365648      |      374257     |  4303.3  | 0.293733 |
+|   722   |     344922    |      343148      |      346696     |  1773.7  | 0.240981 |
+
+
+
+Finally, the table below shows the sum for all stores, as well as the worst and best scenarios:
+
+| Scenario       | Values           |
+|:---------------|:-----------------|
+| predictions    | R$283,901,824.00 |
+| worst_scenario | R$283,198,749.24 |
+| best_scenario  | R$284,604,871.47 |
+
 
 ## 8. Telegram Bot
 
