@@ -179,3 +179,10 @@ Next step would be run a second cycle for CRISP-DM proccess with focus on follow
 * Datasets Rossmann Store Sales from [Kaggle](https://www.kaggle.com/competitions/rossmann-store-sales/data)
 * Variables meaning on [Kaggle discussion](https://www.kaggle.com/competitions/rossmann-store-sales/overview)
 * Comunidade DS
+
+# Author
+
+Thiago Borges Lima
+
+
+[<img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>](https://www.linkedin.com/in/thiago-borges-lima-a731115b)
